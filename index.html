@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaiChi - Criação de Sites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="MaiChi Logo">
+        </div>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- O restante do conteúdo do site permanece o mesmo -->
+    <section id="home" class="hero">
+        <h1>Bem-vindo à MaiChi</h1>
+        <p>Sua solução completa para criação de sites profissionais.</p>
+        <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Criação de Sites</h3>
+                <p>Desenvolvemos sites personalizados para o seu negócio.</p>
+            </div>
+            <div class="service-item">
+                <h3>E-commerce</h3>
+                <p>Lojas virtuais completas e integradas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Manutenção</h3>
+                <p>Manutenção e suporte contínuo para o seu site.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="images/project1.jpg" alt="Projeto 1">
+                <p>Projeto 1</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project2.jpg" alt="Projeto 2">
+                <p>Projeto 2</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project3.jpg" alt="Projeto 3">
+                <p>Projeto 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MaiChi. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

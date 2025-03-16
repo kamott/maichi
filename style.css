@@ -1,0 +1,306 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1 1 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 1 1 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    overflow: hidden; /* Evita que o conteúdo vaze */
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 100%; /* Garante que o formulário não ultrapasse a largura da tela */
+    padding: 0 20px; /* Adiciona um padding interno para evitar que o conteúdo encoste nas bordas */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.contact form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%; /* Faz o botão ocupar toda a largura */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .contact {
+        padding: 50px 10px; /* Reduz o padding em telas menores */
+    }
+
+    .contact form {
+        padding: 0 10px; /* Reduz o padding interno do formulário */
+    }
+
+    .contact form input, .contact form textarea {
+        font-size: 0.9em; /* Reduz o tamanho da fonte */
+    }
+
+    .contact form button {
+        font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 30px 10px; /* Reduz ainda mais o padding em telas muito pequenas */
+    }
+
+    .contact h2 {
+        font-size: 1.8em; /* Reduz o tamanho do título */
+    }
+
+    .contact form input, .contact form textarea {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
+    }
+
+    .contact form button {
+        font-size: 0.8em; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .service-item, .portfolio-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact form input, .contact form textarea {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .services h2, .portfolio h2, .contact h2 {
+        font-size: 1.8em;
+    }
+
+    .service-item, .portfolio-item {
+        padding: 15px;
+    }
+
+    .contact form input, .contact form textarea {
+        font-size: 0.8em;
+    }
+}
